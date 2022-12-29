@@ -11,7 +11,9 @@ const Main = () => {
           موقع <span className="multiText"> متبرع</span>
           <p>تبرعك هيساعد ناس كتير</p>
           <div className="btns">
-            <button className="btts">مشاهدة التبرعات</button>
+            <button className="btts">
+              <a href="">مشاهدة التبرعات</a>
+            </button>
           </div>
         </h1>
       </div>

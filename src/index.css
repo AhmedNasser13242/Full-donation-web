@@ -140,3 +140,11 @@ a:hover {
   background-color: #aa6c96;
   width: 10px;
 }
+.btn-group-lg > .btn,
+.btn-lg {
+  border-radius: 3em;
+  background-color: #e1d3f7;
+}
+a {
+  color: #3e0933;
+}

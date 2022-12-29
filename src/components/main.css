@@ -17,7 +17,7 @@
   display: block;
   position: relative;
   font-size: 50px;
-  color: rgb(90, 54, 124);
+  color: #551b4c;
 }
 
 .topline::after {
@@ -26,7 +26,7 @@
   height: 4px;
   width: 45px;
   bottom: 10px;
-  background-color: #7f00ff;
+  background-color: #595959;
 }
 .text1 {
   position: relative;
@@ -34,17 +34,17 @@
   display: block;
   font-size: 2.1em;
   font-weight: 900;
-  color: #99f582;
+  color: #595959;
 }
 .multiText {
-  color: #530ba0;
+  color: #551b4c;
   text-transform: capitalize;
 }
 p {
   display: block;
   width: 90%;
   font-size: 1.5em;
-  color: rgb(90, 54, 124);
+  color: #551b4c;
 }
 .btns {
   width: 60%;
@@ -57,15 +57,15 @@ button {
   cursor: pointer;
   font-size: 25px;
   font-weight: 700;
-  color: rgb(32, 2, 31);
-  background-color: #dacbe7;
+  color: #551b4c;
+  background-color: #e6bfcc;
   padding: 8px 6px;
   margin: 40px 5px;
   text-transform: capitalize;
   transition: all 0.5s ease;
 }
 button:hover {
-  background-color: #caa7ee;
+  background-color: #b5599f;
 }
 .imgbox {
   position: relative;
@@ -94,19 +94,21 @@ button:hover {
   .imgbox {
     display: none;
   }
-  body {
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  body,
+  html {
     overflow-x: hidden;
   }
   .wrapper {
     display: flex;
-    width: 136%;
+    width: 140%;
     height: 100%;
     justify-content: center;
     align-items: center;
-    padding: 15% 0%;
-    overflow: hidden;
+    padding: 40% 0%;
     right: 75px;
     position: relative;
-    background-color: #ffffff;
   }
 }
