@@ -34,11 +34,11 @@ const BestSellers = () => {
           <LoadingCard count={3} />
         ) : (
           <div className="row">
-            {products.map((product) => (
+            {(product) => (
               <div key={product._id} className="col-md-4">
                 <ProductCard product={product} />
               </div>
-            ))}
+            )}
           </div>
         )}
       </div>
