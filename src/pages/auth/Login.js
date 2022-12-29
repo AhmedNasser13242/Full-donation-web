@@ -115,7 +115,7 @@ const Login = () => {
           className="form-control"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          placeholder="Your email"
+          placeholder="الايميل الخاص بك"
           autoFocus
         />
       </div>
@@ -126,7 +126,7 @@ const Login = () => {
           className="form-control"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-          placeholder="Your password"
+          placeholder="الباسورد الخاص بك"
         />
       </div>
 
@@ -141,7 +141,7 @@ const Login = () => {
         size="large"
         disabled={!email || password.length < 6}
       >
-        Login with Email/Password
+        التسجيل عن طريق ايميل/باسورد
       </Button>
     </form>
   );
@@ -153,7 +153,7 @@ const Login = () => {
           {loading ? (
             <h4 className="text-danger">جاري التحميل...</h4>
           ) : (
-            <h4>Login</h4>
+            <h4>تسجيل</h4>
           )}
           {loginForm()}
 
@@ -166,11 +166,11 @@ const Login = () => {
             icon={<GoogleOutlined />}
             size="large"
           >
-            Login with Google
+            التسجيل بجوجل
           </Button>
 
           <Link to="/forgot/password" className="float-right text-danger">
-            Forgot Password
+            لقدت نسيت كلمة المرور
           </Link>
         </div>
       </div>

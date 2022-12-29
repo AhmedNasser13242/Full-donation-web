@@ -86,12 +86,12 @@ const RegisterComplete = () => {
         className="form-control"
         value={password}
         onChange={(e) => setPassword(e.target.value)}
-        placeholder="Password"
+        placeholder="باسورد"
         autoFocus
       />
       <br />
       <button type="submit" className="btn btn-raised">
-        Complete Registration
+        تم التسجيل
       </button>
     </form>
   );
@@ -100,7 +100,7 @@ const RegisterComplete = () => {
     <div className="container p-5">
       <div className="row">
         <div className="col-md-6 offset-md-3">
-          <h4>Register Complete</h4>
+          <h4>اكمال التسجيل</h4>
           {completeRegistrationForm()}
         </div>
       </div>

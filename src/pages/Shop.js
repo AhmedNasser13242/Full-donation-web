@@ -314,56 +314,23 @@ const Shop = () => {
     <div className="container-fluid">
       <div className="row">
         <div className="col-md-3 pt-2">
-          <h4>Search/Filter</h4>
+          <h4>بحث/فلترة</h4>
           <hr />
 
           <Menu
             defaultOpenKeys={["1", "2", "3", "4", "5", "6", "7"]}
             mode="inline"
           >
-            {/* price */}
-            <SubMenu
-              key="1"
-              title={
-                <span className="h6">
-                  <DollarOutlined /> Price
-                </span>
-              }
-            >
-              <div>
-                <Slider
-                  className="ml-4 mr-4"
-                  tipFormatter={(v) => `$${v}`}
-                  range
-                  value={price}
-                  onChange={handleSlider}
-                  max="4999"
-                />
-              </div>
-            </SubMenu>
-
             {/* category */}
             <SubMenu
               key="2"
               title={
                 <span className="h6">
-                  <DownSquareOutlined /> Categories
+                  <DownSquareOutlined /> الدولة
                 </span>
               }
             >
               <div style={{ maringTop: "-10px" }}>{showCategories()}</div>
-            </SubMenu>
-
-            {/* stars */}
-            <SubMenu
-              key="3"
-              title={
-                <span className="h6">
-                  <StarOutlined /> Rating
-                </span>
-              }
-            >
-              <div style={{ maringTop: "-10px" }}>{showStars()}</div>
             </SubMenu>
 
             {/* sub category */}
@@ -371,7 +338,7 @@ const Shop = () => {
               key="4"
               title={
                 <span className="h6">
-                  <DownSquareOutlined /> Sub Categories
+                  <DownSquareOutlined /> التبرع الي
                 </span>
               }
             >
@@ -380,40 +347,12 @@ const Shop = () => {
               </div>
             </SubMenu>
 
-            {/* brands */}
-            <SubMenu
-              key="5"
-              title={
-                <span className="h6">
-                  <DownSquareOutlined /> Brands
-                </span>
-              }
-            >
-              <div style={{ maringTop: "-10px" }} className="pr-5">
-                {showBrands()}
-              </div>
-            </SubMenu>
-
-            {/* colors */}
-            <SubMenu
-              key="6"
-              title={
-                <span className="h6">
-                  <DownSquareOutlined /> Colors
-                </span>
-              }
-            >
-              <div style={{ maringTop: "-10px" }} className="pr-5">
-                {showColors()}
-              </div>
-            </SubMenu>
-
             {/* shipping */}
             <SubMenu
               key="7"
               title={
                 <span className="h6">
-                  <DownSquareOutlined /> Shipping
+                  <DownSquareOutlined /> توصيل
                 </span>
               }
             >
@@ -428,10 +367,10 @@ const Shop = () => {
           {loading ? (
             <h4 className="text-danger">جاري التحميل...</h4>
           ) : (
-            <h4 className="text-danger">Products</h4>
+            <h4 className="text-danger">اعلانات</h4>
           )}
 
-          {products.length < 1 && <p>No products found</p>}
+          {products.length < 1 && <p>لا يوجد اعلانات</p>}
 
           <div className="row pb-5">
             {products.map((p) => (

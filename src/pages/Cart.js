@@ -46,14 +46,20 @@ const Cart = () => {
     <table className="table table-bordered">
       <thead className="thead-light">
         <tr>
-          <th scope="col">Image</th>
-          <th scope="col">Title</th>
-          <th scope="col">Price</th>
-          <th scope="col">Brand</th>
-          <th scope="col">Color</th>
-          <th scope="col">Count</th>
-          <th scope="col">Shipping</th>
-          <th scope="col">Remove</th>
+          <th scope="col">صورة</th>
+          <th scope="col">عنوان</th>
+          <th scope="col" hidden>
+            Price
+          </th>
+          <th scope="col" hidden>
+            Brand
+          </th>
+          <th scope="col" hidden>
+            Color
+          </th>
+          <th scope="col">المبلغ</th>
+          <th scope="col">توصيل</th>
+          <th scope="col">ازالة</th>
         </tr>
       </thead>
 
@@ -67,29 +73,28 @@ const Cart = () => {
     <div className="container-fluid pt-2">
       <div className="row">
         <div className="col-md-8">
-          <h4>Cart / {cart.length} Product</h4>
+          <h4>الحقيبة / {cart.length} اعلانات</h4>
 
           {!cart.length ? (
             <p>
-              No products in cart. <Link to="/shop">Continue Shopping.</Link>
+              لا يوجد اعلانات في الحقيبة.{" "}
+              <Link to="/shop">اكمل تصفح الاعلانات.</Link>
             </p>
           ) : (
             showCartItems()
           )}
         </div>
         <div className="col-md-4">
-          <h4>Order Summary</h4>
+          <h4>تفاصيل التبرع</h4>
           <hr />
-          <p>Products</p>
+          <p>الاعلانات</p>
           {cart.map((c, i) => (
             <div key={i}>
-              <p>
-                {c.title} x {c.count} = ${c.price * c.count}
-              </p>
+              <p>{c.title}</p>
             </div>
           ))}
           <hr />
-          Total: <b>${getTotal()}</b>
+          الاجمالي: <b>ج.م{getTotal()}</b>
           <hr />
           {user ? (
             <>
@@ -98,7 +103,7 @@ const Cart = () => {
                 className="btn btn-sm btn-primary mt-2"
                 disabled={!cart.length}
               >
-                Proceed to Checkout
+                اكمل عملية الشراء
               </button>
               <br />
               <button
@@ -106,7 +111,7 @@ const Cart = () => {
                 className="btn btn-sm btn-warning mt-2"
                 disabled={!cart.length}
               >
-                Pay Cash on Delivery
+                التوصيل
               </button>
             </>
           ) : (
@@ -117,7 +122,7 @@ const Cart = () => {
                   state: { from: "cart" },
                 }}
               >
-                Login to Checkout
+                سجل دخولك اولا حتي تكمل عملية الشراء
               </Link>
             </button>
           )}

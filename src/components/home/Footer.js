@@ -45,10 +45,9 @@ const Footer = () => {
         </div>
         <div class="footer-right">
           <p class="footer-company-about">
-            <span>About the company</span>
-            <strong>Sagar Developer</strong> is a Youtube channel where you can
-            find more creative CSS Animations and Effects along with HTML,
-            JavaScript and Projects using C/C++.
+            <span>خاص بالموقع</span>
+            <strong>احمد ناصر</strong> تم عمل الموقع بشكل افتراضي فقط وهو ليش
+            جاهز تماما للتبرع
           </p>
           <div class="footer-icons">
             <a href="#">

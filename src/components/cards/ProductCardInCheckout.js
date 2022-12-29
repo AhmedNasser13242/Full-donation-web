@@ -103,23 +103,26 @@ const ProductCardInCheckout = ({ p }) => {
           </div>
         </td>
         <td>{p.title}</td>
-        <td>${p.price}</td>
-        <td>{p.brand}</td>
-        <td>
+        <td hidden>${p.price}</td>
+        <td hidden>{p.brand}</td>
+        <td hidden>
           <select
+            hidden
             onChange={handleColorChange}
             name="color"
             className="form-control"
           >
             {p.color ? (
-              <option value={p.color}>{p.color}</option>
+              <option hidden value={p.color}>
+                {p.color}
+              </option>
             ) : (
-              <option>Select</option>
+              <option hidden>Select</option>
             )}
             {colors
               .filter((c) => c !== p.color)
               .map((c) => (
-                <option key={c} value={c}>
+                <option hidden key={c} value={c}>
                   {c}
                 </option>
               ))}
