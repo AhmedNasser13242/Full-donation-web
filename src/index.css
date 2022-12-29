@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  font-family: "Noto Kufi Arabic", sans-serif;
+  font-weight: 600;
+}
+body {
+  overflow-x: hidden;
+}
+.slider img {
+  height: 450px;
+  object-fit: cover;
+}
+:where(.css-dev-only-do-not-override-9ntgx0).ant-menu-light.ant-menu-horizontal
+  > .ant-menu-item-selected::after,
+:where(.css-dev-only-do-not-override-9ntgx0).ant-menu-light.ant-menu-horizontal
+  > .ant-menu-submenu-selected::after {
+  border-bottom-color: #8666b9;
+}
+:where(.css-dev-only-do-not-override-9ntgx0).ant-menu-light.ant-menu-horizontal
+  > .ant-menu-item-selected,
+:where(.css-dev-only-do-not-override-9ntgx0).ant-menu-light.ant-menu-horizontal
+  > .ant-menu-submenu-selected {
+  color: #8666b9;
+  text-decoration: none;
+}
+:where(.css-dev-only-do-not-override-9ntgx0).ant-menu
+  .ant-menu-item
+  .ant-menu-item-icon
+  + span,
+:where(.css-dev-only-do-not-override-9ntgx0).ant-menu
+  .ant-menu-submenu-title
+  .ant-menu-item-icon
+  + span,
+:where(.css-dev-only-do-not-override-9ntgx0).ant-menu
+  .ant-menu-item
+  .anticon
+  + span,
+:where(.css-dev-only-do-not-override-9ntgx0).ant-menu
+  .ant-menu-submenu-title
+  .anticon
+  + span {
+  color: #8666b9;
+  text-decoration: none;
+}
+:where(.css-dev-only-do-not-override-9ntgx0).ant-menu-light.ant-menu-horizontal
+  > .ant-menu-item,
+:where(.css-dev-only-do-not-override-9ntgx0).ant-menu-light.ant-menu-horizontal
+  > .ant-menu-submenu {
+  text-decoration: none;
+  color: #8666b9;
+}
+:where(.css-dev-only-do-not-override-9ntgx0).ant-badge {
+  color: #8666b9;
+  font-weight: 900;
+}
+:where(.css-dev-only-do-not-override-9ntgx0).ant-menu
+  .ant-menu-item
+  .ant-menu-item-icon
+  svg,
+:where(.css-dev-only-do-not-override-9ntgx0).ant-menu
+  .ant-menu-submenu-title
+  .ant-menu-item-icon
+  svg {
+  color: #8666b9;
+}
+:where(.css-dev-only-do-not-override-9ntgx0).ant-menu-light.ant-menu-horizontal
+  > .ant-menu-item:hover::after,
+:where(.css-dev-only-do-not-override-9ntgx0).ant-menu-light.ant-menu-horizontal
+  > .ant-menu-submenu:hover::after,
+:where(.css-dev-only-do-not-override-9ntgx0).ant-menu-light.ant-menu-horizontal
+  > .ant-menu-item-active::after,
+:where(.css-dev-only-do-not-override-9ntgx0).ant-menu-light.ant-menu-horizontal
+  > .ant-menu-submenu-active::after,
+:where(.css-dev-only-do-not-override-9ntgx0).ant-menu-light.ant-menu-horizontal
+  > .ant-menu-item-open::after,
+:where(.css-dev-only-do-not-override-9ntgx0).ant-menu-light.ant-menu-horizontal
+  > .ant-menu-submenu-open::after {
+  border-bottom-color: #e364e7;
+}
+:where(.css-dev-only-do-not-override-9ntgx0).ant-menu-light .ant-menu-item a,
+:where(.css-dev-only-do-not-override-9ntgx0).ant-menu-light
+  .ant-menu-item
+  a:hover {
+  text-decoration: none;
+}
+.btn {
+  background-color: rgb(174, 65, 120);
+  color: aliceblue;
+  transition: all 0.6s ease;
+}
+.btn:hover {
+  background-color: #c0aae4;
+  color: aliceblue;
+  scale: 1.1;
+}
+a {
+  text-decoration: none;
+  color: #ffff;
+}
+a:hover {
+  text-decoration: none;
+  color: rgb(63, 13, 78);
+}
+.text-center {
+  color: rgb(174, 65, 120);
+}
+*,
+*::before,
+*::after {
+  color: #8453d3;
+}
+.nav-link {
+  color: rgb(174, 65, 120);
+  transition: all 0.5s ease;
+}
+.nav-link:hover {
+  color: #ae97d1;
+}
+.bg-info3 {
+  background-color: aliceblue;
+}
+::-webkit-scrollbar {
+  color: #ae97d1;
+  background-color: #ae97d1;
+  width: 13px;
+}
+::-webkit-scrollbar-thumb {
+  color: #8b7f9e;
+  background-color: #a3348b;
+  border-radius: 10px;
+  width: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  color: #8b7f9e;
+  background-color: #711f5f;
+  border-radius: 10px;
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: #aa6c96;
+  width: 10px;
+}
