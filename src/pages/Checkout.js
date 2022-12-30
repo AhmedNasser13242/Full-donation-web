@@ -163,14 +163,12 @@ const Checkout = () => {
   return (
     <div className="row">
       <div className="col-md-6">
-        <h4>Delivery Address</h4>
+        <h4>يرجي اضافة عنوانك</h4>
         <br />
         <br />
         {showAddress()}
         <hr />
-        <h4>Got Coupon?</h4>
         <br />
-        {showApplyCoupon()}
         <br />
         {discountError && <p className="bg-danger p-2">{discountError}</p>}
       </div>
@@ -198,7 +196,7 @@ const Checkout = () => {
                 disabled={!addressSaved || !products.length}
                 onClick={createCashOrder}
               >
-                Place Order
+                قم بالدفع
               </button>
             ) : (
               <button
@@ -206,7 +204,7 @@ const Checkout = () => {
                 disabled={!addressSaved || !products.length}
                 onClick={() => redirect("/payment")}
               >
-                Place Order
+                قم بالدفع
               </button>
             )}
           </div>
