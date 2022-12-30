@@ -148,3 +148,10 @@ a:hover {
 a {
   color: #3e0933;
 }
+.p-1 {
+  color: #a3348b;
+  font-size: 0.9em;
+}
+.text-danger {
+  color: #3e0933;
+}

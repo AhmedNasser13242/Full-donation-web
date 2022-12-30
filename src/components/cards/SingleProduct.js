@@ -91,7 +91,7 @@ const SingleProduct = ({ product, onStarClick, star }) => {
             {description && description}
           </TabPane>
           <TabPane tab="More" key="2">
-            Call use on xxxx xxx xxx to learn more about this product.
+            اتصل او ابعت واتس اب علي 01063265174 لمعرفة اي تفاصيل.
           </TabPane>
         </Tabs>
       </div>
@@ -105,22 +105,14 @@ const SingleProduct = ({ product, onStarClick, star }) => {
               <a onClick={handleAddToCart} disabled={product.quantity < 1}>
                 <ShoppingCartOutlined className="text-danger" />
                 <br />
-                {product.quantity < 1 ? "Out of Stock" : "اضف للحقيبة"}
+                {product.quantity < 1
+                  ? "لا يوجد امكانية للتبرع"
+                  : "اضف للحقيبة"}
               </a>
             </Tooltip>,
             <a onClick={handleAddToWishlist}>
-              <HeartOutlined className="text-info" /> <br /> Add to Wishlist
+              <HeartOutlined className="text-info" /> <br /> اضف للمفضلة
             </a>,
-            <RatingModal>
-              <StarRating
-                name={_id}
-                numberOfStars={5}
-                rating={star}
-                changeRating={onStarClick}
-                isSelectable={true}
-                starRatedColor="red"
-              />
-            </RatingModal>,
           ]}
         >
           <ProductListItems product={product} />

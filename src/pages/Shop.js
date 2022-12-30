@@ -281,7 +281,7 @@ const Shop = () => {
         value="Yes"
         checked={shipping === "Yes"}
       >
-        Yes
+        نعم
       </Checkbox>
 
       <Checkbox
@@ -290,7 +290,7 @@ const Shop = () => {
         value="No"
         checked={shipping === "No"}
       >
-        No
+        لا
       </Checkbox>
     </>
   );

@@ -43,7 +43,7 @@
 p {
   display: block;
   width: 90%;
-  font-size: 1.5em;
+  font-size: 2em;
   color: #551b4c;
 }
 .btns {
@@ -75,8 +75,8 @@ button:hover {
 .imgbox img {
   position: relative;
   height: 100%;
-  width: 500px;
-  top: -100px;
+  width: 450px;
+  top: 30px;
   right: 50px;
   transform: rotateY("180deg");
   animation: animateUser 4s linear infinite;
@@ -84,7 +84,7 @@ button:hover {
 @keyframes animateUser {
   50% {
     right: 30px;
-    top: -90px;
+    top: -40px;
   }
 }
 .btts {

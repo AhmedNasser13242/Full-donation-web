@@ -29,7 +29,7 @@ const NewArrivals = () => {
 
   return (
     <>
-      <div className="container">
+      <div className="container" id="donate">
         {loading ? (
           <LoadingCard count={3} />
         ) : (

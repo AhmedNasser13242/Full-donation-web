@@ -56,7 +56,7 @@ const Product = () => {
       <div className="row">
         <div className="col text-center pt-5 pb-5">
           <hr />
-          <h4>Related Products</h4>
+          <h4>اعلانات مشابهة</h4>
           <hr />
         </div>
       </div>
@@ -69,7 +69,7 @@ const Product = () => {
             </div>
           ))
         ) : (
-          <div className="text-center col">No Products Found</div>
+          <div className="text-center col">لا يوجد اعلانات مشابهة</div>
         )}
       </div>
     </div>

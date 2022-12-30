@@ -1,6 +1,6 @@
 import React from "react";
 import "../main.css";
-import img1 from "../../images/e1afe4915eb59e45ff636e99f6b821d0.jpg";
+import img1 from "../../images/logo.jpg";
 
 const Main = () => {
   return (
@@ -12,7 +12,7 @@ const Main = () => {
           <p>تبرعك هيساعد ناس كتير</p>
           <div className="btns">
             <button className="btts">
-              <a href="">مشاهدة التبرعات</a>
+              <a href="#donate">مشاهدة التبرعات</a>
             </button>
           </div>
         </h1>

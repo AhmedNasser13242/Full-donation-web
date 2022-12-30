@@ -96,7 +96,7 @@ const Header = () => {
           )}
 
           <Item icon={<LogoutOutlined />} onClick={logout}>
-            Logout
+            تسجيل خروج
           </Item>
         </SubMenu>
       )}

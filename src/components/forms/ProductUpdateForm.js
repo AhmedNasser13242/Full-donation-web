@@ -75,12 +75,12 @@ const ProductUpdateForm = ({
           className="form-control"
           onChange={handleChange}
         >
-          <option value="No">No</option>
-          <option value="Yes">Yes</option>
+          <option value="No">لا</option>
+          <option value="Yes">نعم</option>
         </select>
       </div>
 
-      <div className="form-group">
+      <div hidden className="form-group">
         <label>Quantity</label>
         <input
           type="number"
@@ -91,7 +91,7 @@ const ProductUpdateForm = ({
         />
       </div>
 
-      <div className="form-group">
+      <div hidden className="form-group">
         <label>Color</label>
         <select
           value={color}
@@ -107,7 +107,7 @@ const ProductUpdateForm = ({
         </select>
       </div>
 
-      <div className="form-group">
+      <div hidden className="form-group">
         <label>Brand</label>
         <select
           value={brand}
@@ -124,7 +124,7 @@ const ProductUpdateForm = ({
       </div>
 
       <div className="form-group">
-        <label>Category</label>
+        <label>الدولة</label>
         <select
           name="category"
           className="form-control"
@@ -141,7 +141,7 @@ const ProductUpdateForm = ({
       </div>
 
       <div>
-        <label>Sub Categories</label>
+        <label>مكان التبرع</label>
         <Select
           mode="multiple"
           style={{ width: "100%" }}

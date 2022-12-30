@@ -73,8 +73,8 @@ const ProductCreateForm = ({
           onChange={handleChange}
         >
           <option>يجب اختيار</option>
-          <option value="No">لا</option>
-          <option value="Yes">نعم</option>
+          <option value="لا">لا</option>
+          <option value="نعم">نعم</option>
         </select>
       </div>
 
