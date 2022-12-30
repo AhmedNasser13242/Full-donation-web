@@ -155,3 +155,6 @@ a {
 .text-danger {
   color: #3e0933;
 }
+.anticon svg {
+  background-color: white;
+}
