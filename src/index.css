@@ -215,3 +215,12 @@ body {
 .bg-light {
   background-color: #131313;
 }
+:where(.css-9ntgx0).ant-card .ant-card-body {
+  background-color: #131313;
+}
+:where(.css-9ntgx0).ant-card .ant-card-actions {
+  background-color: #252525;
+}
+:where(.css-9ntgx0).ant-card-bordered .ant-card-cover {
+  background-color: #1d1d1d;
+}
