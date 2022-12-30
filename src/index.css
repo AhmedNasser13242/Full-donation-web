@@ -220,7 +220,7 @@ body {
 }
 :where(.css-9ntgx0).ant-card .ant-card-actions {
   border: 0px;
-  background-color: #161616;
+  background-color: #1d1d1d;
 }
 :where(.css-9ntgx0).ant-card-bordered .ant-card-cover {
   background-color: #303030;
@@ -239,7 +239,7 @@ body {
 }
 :where(.css-9ntgx0).ant-card .ant-card-actions > li > span a:not(.ant-card-btn),
 :where(.css-9ntgx0).ant-card .ant-card-actions > li > span > .anticon {
-  columns: #ffff;
+  color: #ffff;
 }
 :where(.css-9ntgx0).ant-tabs
   .ant-tabs-tab.ant-tabs-tab-active
