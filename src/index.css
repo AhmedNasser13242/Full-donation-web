@@ -220,11 +220,38 @@ body {
 }
 :where(.css-9ntgx0).ant-card .ant-card-actions {
   border: 0px;
-  background-color: #1d1d1d;
+  background-color: #161616;
 }
 :where(.css-9ntgx0).ant-card-bordered .ant-card-cover {
   background-color: #303030;
 }
 :where(.css-9ntgx0).ant-card-bordered {
   border: 0px;
+}
+:where(.css-9ntgx0).ant-card-bordered {
+  background-color: #303030;
+}
+:where(.css-9ntgx0).ant-card .ant-card-meta-title {
+  color: #ffff;
+}
+:where(.css-9ntgx0).ant-card .ant-card-meta-description {
+  color: rgba(255, 255, 255, 0.45);
+}
+:where(.css-9ntgx0).ant-card .ant-card-actions > li > span a:not(.ant-card-btn),
+:where(.css-9ntgx0).ant-card .ant-card-actions > li > span > .anticon {
+  columns: #ffff;
+}
+:where(.css-9ntgx0).ant-tabs
+  .ant-tabs-tab.ant-tabs-tab-active
+  .ant-tabs-tab-btn {
+  color: #131313;
+}
+:where(.css-9ntgx0).ant-tabs .ant-tabs-tabpane {
+  color: white;
+}
+:where(.css-9ntgx0).ant-tabs .ant-tabs-tab-btn {
+  color: white;
+}
+:where(.css-9ntgx0).ant-menu-light {
+  background-color: #1d1d1d;
 }
