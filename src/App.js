@@ -37,6 +37,7 @@ import Footer from "./components/home/Footer";
 import { auth } from "./firebase";
 import { useDispatch } from "react-redux";
 import { currentUser } from "./functions/auth";
+import Eyes from "./components/home/Eyes";
 
 const App = () => {
   const dispatch = useDispatch();

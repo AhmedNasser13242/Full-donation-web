@@ -35,7 +35,11 @@ const BestSellers = () => {
         ) : (
           <div className="row">
             {products.map((product) => (
-              <div key={product._id} className="col-md-4">
+              <div
+                key={product._id}
+                className="col-md-4"
+                style={{ padding: "30px 10px" }}
+              >
                 <ProductCard product={product} />
               </div>
             ))}

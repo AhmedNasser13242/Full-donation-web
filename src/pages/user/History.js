@@ -41,7 +41,11 @@ const History = () => {
 
   const showEachOrders = () =>
     orders.map((order, i) => (
-      <div key={i} className="m-5 p-3 card">
+      <div
+        key={i}
+        className="m-5 p-3 card"
+        style={{ backgroundColor: "#131313" }}
+      >
         <ShowPaymentInfo order={order} />
         {showOrderInTable(order)}
         <div className="row">

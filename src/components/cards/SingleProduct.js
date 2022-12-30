@@ -87,10 +87,10 @@ const SingleProduct = ({ product, onStarClick, star }) => {
         )}
 
         <Tabs type="card">
-          <TabPane tab="Description" key="1">
+          <TabPane tab="عنوان" key="1">
             {description && description}
           </TabPane>
-          <TabPane tab="More" key="2">
+          <TabPane tab="المزيد" key="2">
             اتصل او ابعت واتس اب علي 01063265174 لمعرفة اي تفاصيل.
           </TabPane>
         </Tabs>

@@ -16,7 +16,8 @@ const ProductListItems = ({ product }) => {
 
       {category && (
         <li className="list-group-item">
-          دولة التبرع{" "}
+          دولة التبرع
+          <br />{" "}
           <Link
             to={`/category/${category.slug}`}
             className="label label-default label-pill pull-xs-right"
@@ -29,6 +30,7 @@ const ProductListItems = ({ product }) => {
       {subs && (
         <li className="list-group-item">
           مكان التبرع
+          <br />
           {subs.map((s) => (
             <Link
               key={s._id}
@@ -42,7 +44,7 @@ const ProductListItems = ({ product }) => {
       )}
 
       <li className="list-group-item">
-        الشحن{" "}
+        الشحن <br />{" "}
         <span className="label label-default label-pill pull-xs-right">
           {shipping}
         </span>
@@ -70,7 +72,9 @@ const ProductListItems = ({ product }) => {
       </li>
 
       <li className="list-group-item">
-        تم التبرع ب :{" "}
+        تم التبرع ب
+        <br />
+        {" ج.م"}
         <span className="label label-default label-pill pull-xs-right">
           {sold}
         </span>

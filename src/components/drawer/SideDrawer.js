@@ -34,16 +34,12 @@ const SideDrawer = () => {
             {p.images[0] ? (
               <>
                 <img src={p.images[0].url} style={imageStyle} />
-                <p className="text-center bg-secondary text-light">
-                  {p.title} x {p.count}
-                </p>
+                <p className="text-center bg-secondary text-light">{p.title}</p>
               </>
             ) : (
               <>
                 <img src={laptop} style={imageStyle} />
-                <p className="text-center bg-secondary text-light">
-                  {p.title} x {p.count}
-                </p>
+                <p className="text-center bg-secondary text-light">{p.title}</p>
               </>
             )}
           </div>
@@ -59,8 +55,9 @@ const SideDrawer = () => {
             })
           }
           className="text-center btn btn-primary btn-raised btn-block"
+          style={{ color: "white" }}
         >
-          Go To Cart
+          اذهب للحقيبة
         </button>
       </Link>
     </Drawer>

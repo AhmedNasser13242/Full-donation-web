@@ -6,7 +6,7 @@
   align-items: center;
   padding: 5% 10%;
   overflow: hidden;
-  background-color: #ffffff;
+  background-color: #131313;
 }
 .cols {
   width: 80%;
@@ -17,7 +17,7 @@
   display: block;
   position: relative;
   font-size: 50px;
-  color: #551b4c;
+  color: #c06fb4;
 }
 
 .topline::after {
@@ -26,7 +26,7 @@
   height: 4px;
   width: 45px;
   bottom: 10px;
-  background-color: #595959;
+  background-color: #ffffff;
 }
 .text1 {
   position: relative;
@@ -34,17 +34,17 @@
   display: block;
   font-size: 2.1em;
   font-weight: 900;
-  color: #595959;
+  color: #ffffff;
 }
 .multiText {
-  color: #551b4c;
+  color: hsl(0, 0%, 100%);
   text-transform: capitalize;
 }
 p {
   display: block;
   width: 90%;
   font-size: 2em;
-  color: #551b4c;
+  color: #c06fb4;
 }
 .btns {
   width: 60%;
@@ -57,8 +57,8 @@ button {
   cursor: pointer;
   font-size: 25px;
   font-weight: 700;
-  color: #551b4c;
-  background-color: #e6bfcc;
+  color: #ffffff;
+  background-color: #c28fa0;
   padding: 8px 6px;
   margin: 40px 5px;
   text-transform: capitalize;
@@ -88,7 +88,12 @@ button:hover {
   }
 }
 .btts {
-  font-size: 20px;
+  background-color: #252525;
+  padding: 0px 20px 10px 20px;
+}
+.btts a {
+  font-size: 18px;
+  color: #ffff;
 }
 @media only screen and (max-width: 780px) {
   .imgbox {
@@ -110,5 +115,62 @@ button:hover {
     padding: 40% 0%;
     right: 75px;
     position: relative;
+  }
+}
+.card {
+  border: 0px;
+}
+:where(.css-dev-only-do-not-override-9ntgx0).ant-card .ant-card-actions {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 0px solid #f0f0f0;
+  display: flex;
+  border-radius: 0 0 8px 8px;
+}
+:where(.css-dev-only-do-not-override-9ntgx0).ant-card-bordered {
+  border: 0px;
+}
+h2 {
+  position: relative;
+  -webkit-text-stroke: 0.1vw #f05dce;
+  text-transform: uppercase;
+  color: #131313;
+}
+h2::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #c06fb4;
+  -webkit-text-stroke: #131313;
+  border-right: 2px solid rgb(187, 134, 212);
+  overflow: hidden;
+  animation: animate 6s linear infinite;
+}
+@keyframes animate {
+  0%,
+  10%,
+  100% {
+    width: 0;
+  }
+  70%,
+  90% {
+    width: 17%;
+  }
+}
+@media only screen and (max-width: 780px) {
+  @keyframes animate {
+    0%,
+    10%,
+    100% {
+      width: 0;
+    }
+    70%,
+    90% {
+      width: 24%;
+    }
   }
 }
