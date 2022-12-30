@@ -255,3 +255,6 @@ body {
 :where(.css-9ntgx0).ant-menu-light {
   background-color: #1d1d1d;
 }
+:where(.css-9ntgx0).ant-badge {
+  color: #8453d3;
+}
