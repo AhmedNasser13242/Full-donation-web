@@ -133,7 +133,7 @@ button:hover {
 }
 h2 {
   position: relative;
-  -webkit-text-stroke: 0.1vw #f05dce;
+  -webkit-text-stroke: 0.4px #b5599f;
   text-transform: uppercase;
   color: #131313;
 }
@@ -149,6 +149,14 @@ h2::before {
   border-right: 2px solid rgb(187, 134, 212);
   overflow: hidden;
   animation: animate 6s linear infinite;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+  -webkit-background-clip: text;
+  color: transparent;
 }
 @keyframes animate {
   0%,
@@ -173,4 +181,15 @@ h2::before {
       width: 24%;
     }
   }
+}
+p {
+  color: #ffff;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+  -webkit-background-clip: text;
+  color: transparent;
 }
