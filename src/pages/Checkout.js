@@ -105,8 +105,7 @@ const Checkout = () => {
     products.map((p, i) => (
       <div key={i}>
         <p>
-          {p.product.title} ({p.color}) x {p.count} ={" "}
-          {p.product.price * p.count}
+          {p.product.title} x {p.count} = {p.product.price * p.count}
         </p>
       </div>
     ));
@@ -174,13 +173,13 @@ const Checkout = () => {
       </div>
 
       <div className="col-md-6">
-        <h4>Order Summary</h4>
+        <h4>نفاصيل التبرع</h4>
         <hr />
-        <p>Products {products.length}</p>
+        <p>اعلانات {products.length}</p>
         <hr />
         {showProductSummary()}
         <hr />
-        <p>Cart Total: {total}</p>
+        <p>اجمالي التبرع: {total}</p>
 
         {totalAfterDiscount > 0 && (
           <p className="bg-success p-2">
@@ -215,7 +214,7 @@ const Checkout = () => {
               onClick={emptyCart}
               className="btn btn-primary"
             >
-              Empty Cart
+              لا يوجد شئ في الحقيبة
             </button>
           </div>
         </div>
