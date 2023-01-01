@@ -3,6 +3,7 @@
   font-family: "Noto Kufi Arabic", sans-serif;
   font-weight: 600;
 }
+
 body {
   overflow-x: hidden;
 }
@@ -39,7 +40,7 @@ body {
   .ant-menu-submenu-title
   .anticon
   + span {
-  color: #8666b9;
+  color: #ffffff;
   text-decoration: none;
 }
 :where(.css-dev-only-do-not-override-9ntgx0).ant-menu-light.ant-menu-horizontal
@@ -50,7 +51,7 @@ body {
   color: #8666b9;
 }
 :where(.css-dev-only-do-not-override-9ntgx0).ant-badge {
-  color: #8666b9;
+  color: #ffffff;
   font-weight: 900;
 }
 :where(.css-dev-only-do-not-override-9ntgx0).ant-menu
@@ -146,7 +147,7 @@ a:hover {
   background-color: #252525;
 }
 a {
-  color: #dd9cd0;
+  color: #ffffff;
 }
 .p-1 {
   color: #a3348b;

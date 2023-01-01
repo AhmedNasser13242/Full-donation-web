@@ -17,7 +17,9 @@ const Main = () => {
           <p>تبرعك هيساعد ناس كتير</p>
           <div className="btns">
             <button className="btts">
-              <a href="#donate">مشاهدة التبرعات</a>
+              <a href="#donate" className="hi">
+                مشاهدة التبرعات
+              </a>
             </button>
           </div>
         </h1>
