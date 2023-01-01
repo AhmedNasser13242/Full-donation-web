@@ -32,3 +32,8 @@
     display: none;
   }
 }
+@media only screen and (max-width: 1440px) {
+  .eyes {
+    left: 800px;
+  }
+}
