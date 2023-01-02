@@ -259,3 +259,42 @@ body {
 :where(.css-9ntgx0).ant-badge {
   color: #8453d3;
 }
+.h4 {
+  position: relative;
+  color: #252525;
+  width: 100%;
+  text-align: center;
+  -webkit-box-reflect: below 1px
+    linear-gradient(transparent, rgba(222, 157, 220, 0.267));
+  line-height: 0.7em;
+  outline: none;
+  animation: animate1 5s linear infinite;
+}
+@keyframes animate1 {
+  0%,
+  18%,
+  20%,
+  50.1%,
+  60%,
+  65.1%,
+  80%,
+  90.1%,
+  92% {
+    color: #929292;
+    text-shadow: none;
+  }
+  18.1%,
+  20.1%,
+  30%,
+  50%,
+  60.1%,
+  65%,
+  80.1%,
+  90%,
+  92.1%,
+  100% {
+    color: rgb(255, 233, 249);
+    text-shadow: 0 0 10px #e26ec9, 0 0 15px #e26ec9, 0 0 30px #e26ec9,
+      0 0 80px #e26ec9, 0 0 160px #e26ec9;
+  }
+}

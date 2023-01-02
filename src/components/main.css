@@ -170,6 +170,9 @@ h2::before {
   }
 }
 @media only screen and (max-width: 780px) {
+  .wrapper {
+    padding: 30px 0px 50px 0px;
+  }
   @keyframes animate {
     0%,
     10%,
