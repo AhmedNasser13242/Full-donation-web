@@ -298,3 +298,25 @@ body {
       0 0 80px #e26ec9, 0 0 160px #e26ec9;
   }
 }
+:where(.css-dev-only-do-not-override-9ntgx0).ant-menu-submenu
+  > .ant-menu
+  .ant-menu-item
+  .ant-menu-item-icon
+  + span,
+:where(.css-dev-only-do-not-override-9ntgx0).ant-menu-submenu
+  > .ant-menu
+  .ant-menu-submenu-title
+  .ant-menu-item-icon
+  + span,
+:where(.css-dev-only-do-not-override-9ntgx0).ant-menu-submenu
+  > .ant-menu
+  .ant-menu-item
+  .anticon
+  + span,
+:where(.css-dev-only-do-not-override-9ntgx0).ant-menu-submenu
+  > .ant-menu
+  .ant-menu-submenu-title
+  .anticon
+  + span {
+  color: #8453d3;
+}

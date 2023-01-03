@@ -314,9 +314,6 @@ const Shop = () => {
     <div className="container-fluid">
       <div className="row">
         <div className="col-md-3 pt-2">
-          <h4>بحث/فلترة</h4>
-          <hr />
-
           <Menu
             defaultOpenKeys={["1", "2", "3", "4", "5", "6", "7"]}
             mode="inline"
