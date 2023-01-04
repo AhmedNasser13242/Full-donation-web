@@ -8,7 +8,7 @@ import { DollarOutlined, CheckOutlined, SwapOutlined } from "@ant-design/icons";
 import Laptop from "../images/laptop.png";
 import { createOrder, emptyUserCart } from "../functions/user";
 
-const StripeCheckout = () => {
+const StripeCheckout = ({ history }) => {
   const dispatch = useDispatch();
   const { user, coupon } = useSelector((state) => ({ ...state }));
 
@@ -108,34 +108,11 @@ const StripeCheckout = () => {
 
   return (
     <>
-      {!succeeded && (
-        <div>
-          {coupon && totalAfterDiscount !== undefined ? (
-            <p className="alert alert-success">{`Total after discount: $${totalAfterDiscount}`}</p>
-          ) : (
-            <p className="alert alert-danger">No coupon applied</p>
-          )}
-        </div>
-      )}
       <div className="text-center pb-5">
         <Card
-          cover={
-            <img
-              src={Laptop}
-              style={{
-                height: "200px",
-                objectFit: "cover",
-                marginBottom: "-50px",
-              }}
-            />
-          }
           actions={[
             <>
-              <DollarOutlined className="text-info" /> <br /> Total: $
-              {cartTotal}
-            </>,
-            <>
-              <CheckOutlined className="text-info" /> <br /> Total payable : $
+              <CheckOutlined className="text-info" /> <br /> اجمالي الدفع : ج.م
               {(payable / 100).toFixed(2)}
             </>,
           ]}
@@ -152,8 +129,8 @@ const StripeCheckout = () => {
           className="stripe-button"
           disabled={processing || disabled || succeeded}
         >
-          <span id="button-text">
-            {processing ? <div className="spinner" id="spinner"></div> : "Pay"}
+          <span id="button-text" style={{ color: "white" }}>
+            {processing ? <div className="spinner" id="spinner"></div> : "ادفع"}
           </span>
         </button>
         <br />
@@ -164,8 +141,7 @@ const StripeCheckout = () => {
         )}
         <br />
         <p className={succeeded ? "result-message" : "result-message hidden"}>
-          Payment Successful.{" "}
-          <Link to="/user/history">See it in your purchase history.</Link>
+          تم التبرع. <Link to="/user/history">شاهد حالة تبرعك من هنا.</Link>
         </p>
       </form>
     </>
